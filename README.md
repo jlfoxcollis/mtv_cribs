@@ -32,7 +32,7 @@ pry(main)> unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1
 
 pry(main)> unit1.number
 # => "A1" -->
-<!-- 
+<!--
 pry(main)> unit1.monthly_rent
 # => 1200
 
@@ -51,7 +51,7 @@ pry(main)> unit1.renter
 # => #<Renter:0x00007fb3ee106ce8...>
 ``` -->
 
-## Iteration 2
+<!-- ## Iteration 2
 
 Use TDD to create a Building class that responds to the following interaction pattern.
 
@@ -105,7 +105,7 @@ pry(main)> building.renters
 
 pry(main)> building.average_rent
 # => 1099.5
-```
+``` -->
 
 ## Iteration 3
 
