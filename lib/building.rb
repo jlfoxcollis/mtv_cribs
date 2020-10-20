@@ -39,5 +39,21 @@ class Building
     all_bedrooms
   end
 
+  def annual_breakdown
+    breakdown = Hash.new { |hash_object, key| hash_object[key] = nil }
+    rented_units.each do |unit|
+      breakdown[unit.renter.name] = (unit.unit[:monthly_rent] * 12)
+    end
+    breakdown
+  end
+
+  def rooms_by_renter
+    by_renter = Hash.new { |hash_object, key| hash_object[key] = {} }
+    rented_units.each do |unit|
+      by_renter[unit.renter] = ({unit.unit.keys[2] => unit.unit.values[2], unit.unit.keys[3] => unit.unit.values[3]})
+    end
+    by_renter
+  end
+
 
 end
