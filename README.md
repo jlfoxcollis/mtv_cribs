@@ -14,7 +14,7 @@
 
 Use TDD to create a Renter class and an Apartment class that respond to the following interaction pattern:
 
-```ruby
+<!-- ```ruby
 pry(main)> require './lib/renter'
 # => true
 
@@ -31,8 +31,8 @@ pry(main)> unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1
 # => #<Apartment:0x00007fb3ecaae7c0...>
 
 pry(main)> unit1.number
-# => "A1"
-
+# => "A1" -->
+<!-- 
 pry(main)> unit1.monthly_rent
 # => 1200
 
@@ -49,7 +49,7 @@ pry(main)> unit1.add_renter(renter1)
 
 pry(main)> unit1.renter
 # => #<Renter:0x00007fb3ee106ce8...>
-```
+``` -->
 
 ## Iteration 2
 
